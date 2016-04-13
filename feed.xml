@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shannon Babincsak</title>
-    <description>The personal website, portfolio and blog of Shannon Babincsak: programmer, web developer, and constitutional law geek.
+    <title>Sabarish Subramanian</title>
+    <description>The personal website, portfolio and blog of Sabarish Subramanian: programmer, web developer, and constitutional law geek.
 </description>
-    <link>http://codeinpink.github.io/</link>
-    <atom:link href="http://codeinpink.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://sabarish14.github.io/</link>
+    <atom:link href="http://sabarish14.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Mon, 11 Jan 2016 03:26:09 -0600</pubDate>
     <lastBuildDate>Mon, 11 Jan 2016 03:26:09 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
@@ -87,13 +87,13 @@ MVC front end frameworks are great, and I’m excited now that I finally know on
 &lt;p&gt;The company used it for PSI planning! If you want to read more, you can
 &lt;a href=&quot;/#/portfolio/portfolio/psi-planning-tool&quot;&gt;view the project entry&lt;/a&gt; for it, and if
 you want to see (or even use) the project, you can
-&lt;a href=&quot;http://github.com/codeinpink/project-saturn&quot;&gt;view it on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&quot;http://github.com/sabarish14/project-saturn&quot;&gt;view it on GitHub&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Stay tuned for more info about the rest of my term!&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Sep 2015 00:00:00 -0500</pubDate>
-        <link>http://codeinpink.github.io/blog/2015/09/my-second-term-at-adtran-first-month/index.html</link>
-        <guid isPermaLink="true">http://codeinpink.github.io/blog/2015/09/my-second-term-at-adtran-first-month/index.html</guid>
+        <link>http://sabarish14.github.io/blog/2015/09/my-second-term-at-adtran-first-month/index.html</link>
+        <guid isPermaLink="true">http://sabarish14.github.io/blog/2015/09/my-second-term-at-adtran-first-month/index.html</guid>
         
         <category>work</category>
         
@@ -301,8 +301,8 @@ This term also taught me &lt;em&gt;so&lt;/em&gt; much about programming, Python,
 This experience was very rewarding, and I hope my next term will be just as great!&lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Jul 2015 00:00:00 -0500</pubDate>
-        <link>http://codeinpink.github.io/blog/2015/07/my-first-term-at-adtran/index.html</link>
-        <guid isPermaLink="true">http://codeinpink.github.io/blog/2015/07/my-first-term-at-adtran/index.html</guid>
+        <link>http://sabarish14.github.io/blog/2015/07/my-first-term-at-adtran/index.html</link>
+        <guid isPermaLink="true">http://sabarish14.github.io/blog/2015/07/my-first-term-at-adtran/index.html</guid>
         
         <category>work</category>
         
@@ -593,8 +593,8 @@ typeahead if you want to do more with it. It’s definitely a fun library
 to mess around with! To see these examples in action, check out my site below!&lt;/p&gt;
 </description>
         <pubDate>Wed, 29 Jul 2015 00:00:00 -0500</pubDate>
-        <link>http://codeinpink.github.io/blog/2015/07/adding-autocomplete-to-inputs-through-twitters-typeahead/index.html</link>
-        <guid isPermaLink="true">http://codeinpink.github.io/blog/2015/07/adding-autocomplete-to-inputs-through-twitters-typeahead/index.html</guid>
+        <link>http://sabarish14.github.io/blog/2015/07/adding-autocomplete-to-inputs-through-twitters-typeahead/index.html</link>
+        <guid isPermaLink="true">http://sabarish14.github.io/blog/2015/07/adding-autocomplete-to-inputs-through-twitters-typeahead/index.html</guid>
         
         <category>javascript</category>
         
@@ -616,8 +616,8 @@ basically mandatory for “Hello World” to be every programmer’s first blog 
  So, here it is: &lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 25 Jul 2015 00:00:00 -0500</pubDate>
-        <link>http://codeinpink.github.io/blog/2015/07/obligatory-hello-world/index.html</link>
-        <guid isPermaLink="true">http://codeinpink.github.io/blog/2015/07/obligatory-hello-world/index.html</guid>
+        <link>http://sabarish14.github.io/blog/2015/07/obligatory-hello-world/index.html</link>
+        <guid isPermaLink="true">http://sabarish14.github.io/blog/2015/07/obligatory-hello-world/index.html</guid>
         
         
         <category>general</category>
