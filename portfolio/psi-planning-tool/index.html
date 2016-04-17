@@ -149,37 +149,34 @@
                             <h3>Description</h3>
                             <div id="description">
                                 <p>
-                                    This project is developed as a course project for Big data Analytics course.This is a web application which has different modules like Predicting flight delays when the itinerary is entered, visualization of 
+                                    This project is developed as a course project for Big data Analytics course.This is a web application which has the following features:
+                                    <li> Predicting flight delays when the itinerary is entered</li>
+                                    <li> Visualization of the busiest Airports across United States</li>
+                                    <li> Calendar visualization that shows the delays in a month</li>  
                                 </p>
 
-<p>It originally started as a hackathon project, but I continued working on it so
-that it could be used a week and a half later for the next PSI planning! I was
-one of two people who worked on it, and I wrote all of the back end code and
-most of the front end. For the back end, I used Django so that I could get even
-more experience with the framework. On the front end, we used Angular since there
-would be a lot of data being sent back and forth, so using a two-way data binding,
-MVC framework was definitely the right decision.</p>
+                                <p>
+                                    The project was done with the following goals in mind:
+                                    <li>To develop machine learning models for big data (greater than 4 GB)</li>
+                                    <li>To develop a full stack web application that can use the prediction results of the machine learning model.</li>
+                                    <li>To develop visualizations by analyzing the big data</li>
+                                </p>
 
                             </div>
 
-                            <h3>Reflection</h3>
+                            <h3>Reflections</h3>
                             <div id="reflection">
-                                <p>This was so fun! I got more experience with Django, learned and got <strong>a lot</strong>
-of experience with Angular, and built something that the company actually used
-a week and a half later! In the end, 57 out of 66 teams imported used it compared
-to its alternative, so I think it’s safe to say people enjoyed it.</p>
+                                <p>
+                                    I have developed machine learning models for smaller datasets in my earlier courses. This project gave me more realistic experience of working with larger dataset. I set up a Hadoop cluster on an EC2 instance and developed the backend application on the cluster. The datab was stored in MongoDB. The features that were used are Departure date,Departure time,Origin, Destination,Airlines,Weather prediction. The machine learning model was built using Mahout library. The results of the prediction were stored in MongoDB. The front-end of the application was built using Node and Angular JS. The front-end had a form where users enters the itinerary details. Then the prediction result of the itinerary is fetched from MongoDB and displayed.
+
+                                </p>
 
 <p>Things I learned:</p>
 
 <ul>
-  <li>Django REST Framework is <strong>awesome</strong>. It’s crazy to think that in
-my last (and first) Django project I wrote <em>all</em> the API endpoints myself, and
-only <em>some</em> were RESTful. This will definitely be a staple in any future
-Django projects.</li>
-  <li>Angular is <em>also</em> <strong>awesome</strong>. Up until this project, I only ever used jQuery
-for CRUD operations, and when you have a lot of models, the code adds up.
-Angular makes <em>everything</em> so simple once you understand it, and I’m really eager
-to use more Angular as well as try out other MVC front end frameworks!</li>
+  <li>Hadoop framework is <strong>awesome</strong>. It handles so many nitty-gritty things.</li>
+<li> Converting a sequential operation to a parallelized one was quite challenging</li>
+<li> Analyzing a big dataset was very difficult.</li>
 </ul>
 
                             </div>
