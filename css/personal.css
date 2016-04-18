@@ -78,7 +78,9 @@
 
 .header {
 	/*background: #5CB4BD;*/
-	background-image: url(/img/mac-coffee2.jpg); 
+	background-image: url(/img/mac-coffee1.jpg); 
+	padding-top:68px; 
+	margin-bottom:50px;
 }
 
 .header h1 {
