@@ -423,7 +423,7 @@ a.more-link,
  	max-height: 160px; border-radius: 50%;
 		}
 	.header p {
- 	font-size: 1em; margin: .1em 0 .6em; display: inline-block; font-style: italic; padding: 6px 10px; background: #F08DC4; color: #345; color: rgba(0,0,0,.7); border-radius: 4px; line-height: 1;
+ 	font-size: 1em; margin: .1em 0 .6em; display: inline-block; font-style: italic; padding: 6px 10px; background: floralwhite; color: #345; color: rgba(0,0,0,.7); border-radius: 4px; line-height: 1;
 		}
 /* single page menu  */
 .single-page-layout .vs-nav li a {
@@ -661,7 +661,7 @@ a.more-link,
 
 /* HEADING WITH ICON */
 h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
-	font-size: 22px; margin-right: 16px; line-height: 39px; text-align: center; color: #B7C6C9; background: #fff; border-radius: 50%; border: 4px solid #dde4e6; display: inline-block; width: 47px;
+	font-size: 22px; margin-right: 16px; line-height: 39px; text-align: center; color: black; background: #fff; border-radius: 50%; border: 4px solid grey; display: inline-block; width: 47px;
 	}
 	h2 i[class^="icon-"]:before, h2 i[class*=" icon-"]:before, h2 i.fa:before {
 		display: inline; margin-left: 0; margin-right: 0;
