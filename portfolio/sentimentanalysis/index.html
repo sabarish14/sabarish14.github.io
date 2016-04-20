@@ -111,10 +111,10 @@
                     <div class="row">
                         <!-- PORTFOLIO-IMAGES - column 8/12 -->
                         <div class="col-md-6 portfolio-field">
-                            <img src="/img/projects/datamining1.png"  title="Project: Airline Data Analysis" class="mb-xs">
+                            <img src="/img/projects/datamining1.png"  title="Project: Sentiment Analysis" class="mb-xs">
 
                             <div class="launch text-center">
-                                <a href="https://github.com/sabarish14/Airline-Data-Analysis" class="button primary" target="_blank">LAUNCH PROJECT</a>
+                                <a href="https://github.com/sabarish14/opinion-mining" class="button primary" target="_blank">LAUNCH PROJECT</a>
                             </div>
 
                             <h3>Technology</h3>
@@ -154,16 +154,36 @@
                             <h3>Reflections</h3>
                             <div id="reflection">
                                 <p>
-                                    I have developed machine learning models for smaller datasets in my earlier courses. This project gave me more realistic experience of working with larger dataset. I set up a Hadoop cluster on an EC2 instance and developed the backend application on the cluster. The datab was stored in MongoDB. The features that were used are Departure date,Departure time,Origin, Destination,Airlines,Weather prediction. The machine learning model was built using Mahout library. The results of the prediction were stored in MongoDB. The front-end of the application was built using Node and Angular JS. The front-end had a form where users enters the itinerary details. Then the prediction result of the itinerary is fetched from MongoDB and displayed.
+                                    After analysis of the training dataset, a number of features were identified and they are,
+                                    <li>    
+                                        <strong>Hash Tags: </strong>Certain hashtags seemed to contribute towards the sentiment of the tweet as they are very frequent among a class of sentiment.So these hashtags were identified and were used as one of the features.Eg: hashtags like #tcot,#tlot seemed to occur frequently
+                                        in the negative class of the obama dataset, hence these hashtags were identified
+                                    </li>
+                                    <li> 
+                                        <strong>Unigram and bigrams:  </strong>Unigram along with bigrams of each classifier was used to train
+                                        the classifier . Both of these were also used as a feature
+                                    </li>
+                                    <li>
+                                        <strong>Unigram polarity calculation:  </strong>Polarity values were calculated for each unigram
+                                        corresponding to each class­positive,negative and neutral.
+                                    </li>
+                                    <li>
+                                        <strong>Bigram pointwise mutual information values:  </strong>Bigrams are identified from each tuple
+                                        and pointwise mutual information value is calculated.
+                                    </li>
+                                    <li>
+                                        <strong>Sentiment of the neighbouring words : </strong>The neighbouring words surrounding the words denoting obama and romney obtained in the polarity feature are used here also. The difference is that only the opinion words in these neighbouring words present in the
+                                        positive and negative opinion words list prepared by Professor Bing Liu are considered. And if a word is preceded by “not” the sentiment is reversed. Now the sentiment of these words either +1 or ­1 are added and normalized by the number of opinion words.This value is also used as a feature
 
+                                    </li>
+                                   
                                 </p>
 
 <p>Things I learned:</p>
 
 <ul>
-  <li>Feature Engineering is the best part i  <strong>awesome</strong>. It handles so many nitty-gritty things.</li>
-<li> Converting a sequential operation to a parallelized one was quite challenging</li>
-<li> Analyzing a big dataset was very difficult.</li>
+    <li>Feature Engineering is the important step in designing a machine learning model. </li>
+    <li> The entire system needs to be built in a loosely coupled fashion</li>
 </ul>
 
                             </div>
@@ -176,7 +196,7 @@
                             <h3>Related Projects</h3>
                             
                             <div class="col-sm-4">
-                                <a href="/portfolio/movielib "><img src="/img/projects/airline.png" alt="A screenshot of the index page for the Yelp data challenge" title="Project: Yelp Data Challenge" class="img-responsive"></a>
+                                <a href="/portfolio/airline-data-analysis"><img src="/img/projects/airline.png" alt="A screenshot of the index page for the Yelp data challenge" title="Project: Airline Data Analysis" class="img-responsive"></a>
                             </div>
                             
                         </div>
