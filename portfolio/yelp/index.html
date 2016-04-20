@@ -157,42 +157,53 @@
                             <h3>Reflections</h3>
                             <div id="reflection">
                                 <p>
-                                    Preprocessing:
-                                        We extracted the reviews from the json file. Here as we are dealing with reviews of Restaurants for Arizona thus we have applied filtering at this stage to extract relevant reviews.
-                    
-                                        Now, we loop through all the reviews in the initial dataset and for each review, we split the review into sentences, remove stopwords, extract parts-of-speech tags for all the remaining tokens, filters out all words which are not nouns, uses Lemmatizer/Stemmer to lookup the lemma of each noun. We have used just the Nouns as using other POS were not giving us good topics, that we are interested in. We have also used lemmatizer should as to strengthen words that belong to a single lemma.
+                                    <strong>Preprocessing:</strong> 
+                                        <li>
+                                            We extracted the reviews from the json file. Here as we are dealing with reviews of Restaurants for Arizona thus we have applied filtering at this stage to extract relevant reviews.
+                                        </li>
+                                        <li>
+                                            Now, we loop through all the reviews in the initial dataset and for each review, we split the review into sentences, remove stopwords, extract parts-of-speech tags for all the remaining tokens, filters out all words which are not nouns, uses Lemmatizer/Stemmer to lookup the lemma of each noun. 
+                                        </li>
+                                        <li>
+                                            We have used just the Nouns as using other POS were not giving us good topics, that we are interested in. We have also used lemmatizer should as to strengthen words that belong to a single lemma.
+                                        </li>
                                 
-                                    Latent Dirchilet Allocation:                 
-                                        Here, we have used Python’s LDA package to perform the LDA on the filtered collections that we have obtained above. We have basically three steps for this process:             
-                                           Combine all the reviews pertaining to a business id
-                                           Feed these reviews as documents to the LDA  and set the following parameters:
-                                           Number of Iterations:1500
-                                           Number of topics per document(business id ): 200
-                                           The output of this LDA  algorithm is all the topics pertaining to a business id..
+                                    <strong>Latent Dirchilet Allocation:  </strong>                
+                                            Here, we have used Python’s LDA package to perform the LDA on the filtered collections that we have obtained above. We have basically three steps for this process: 
+                                                   
+                                           <li> Combine all the reviews pertaining to a business id </li> 
+                                           <li> Feed these reviews as documents to the LDA  and set the following parameters:</li> 
+                                           <li> Number of Iterations:1500
+                                           <li> Number of topics per document(business id ): 200
+                                           <li> The output of this LDA  algorithm is all the topics pertaining to a business id</li> 
                                         
-                                    Topic Selection                   
+                                     <strong>Topic Selection:</strong>             
                                         From the above section, we have obtained the latent topics for each of the business id.In this section, we explain our topic selection mechanism.We used the following steps to select the top 3 topics:
-                                        ●   Count the frequencies of the topics from all the business ids.
-                                        ●   Sort the vocabulary of topics in descending order to select the top 3 topics.
+                                          <li> Count the frequencies of the topics from all the business ids.</li>
+                                          <li> Sort the vocabulary of topics in descending order to select the top 3 topics.</li>
                     
-                                    Classification
-                                        We build classifiers for each of the topics extracted by LDA, service, location and Price. 
-                                        Training Data for this classification task is Human labelled reviews, containing the topic words and their relevant synonyms. Size of the training data is 10000 reviews.  Building the classifier involved the below steps: 
+                                     <strong>Classification </strong>
+                                        <li>We build classifiers for each of the topics extracted by LDA, service, location and Price. </li>
+                                        <li>Training Data for this classification task is Human labelled reviews, containing the topic words and their relevant synonyms.</li>
+                                        <li> Size of the training data is 10000 reviews.  </li>
+                                        <li> Building the classifier involved the below steps: </li>
 
 
-                                        Feature Selection
-                                            Unigrams : We used unigram features to build this model, using nltk word tokenizer.
-                                            TF-IDF transformation: We used term frequency-inverse document frequency (tf-idf) for the features to consider only most frequent features ordered by tf-idf value.
+                                         <strong>Feature Selection  </strong>
+                                        <li>    Unigrams : We used unigram features to build this model, using nltk word tokenizer.</li>
+                                        <li>    TF-IDF transformation: We used term frequency-inverse document frequency (tf-idf) for the features to consider only most frequent features ordered by tf-idf value.</li>
 
-                                        Building Classification Model
-                                            The preprocessed data is used for feature extraction.
-                                            We used scikit learn python package to train our model. The features are given as input to classifiers. We experimented on supervised classifiers such as 
-                                            1.  Linear SVM (Support Vector Machines)
-                                            2.  Logistic Regression
-
-                                        Regression
-                                        Support Vector Regression:
-                                        The labels predicted by the SVM classifier for the three topics is summed up and normalized for each business id.These values serve as the features for regression. The rating of each restaurant is the expected output. The Support Vector Regression is trained with the features and ratings. The kernel used for regression is RBF. The accuracy of the prediction is evaluated using R square score.
+                                         <strong>Building Classification Model  </strong>
+                                        <li>    The preprocessed data is used for feature extraction.</li>
+                                        <li>    We used scikit learn python package to train our model. The features are given as input to classifiers. 
+                                        <li>    We experimented on supervised classifiers such as Linear SVM (Support Vector Machines), Logistic Regression.</li>
+                    
+                                        
+                                         <strong>Support Vector Regression:  </strong>
+                                        <li>    The labels predicted by the SVM classifier for the three topics is summed up and normalized for each business id.</li>
+                                        <li>    These values serve as the features for regression. The rating of each restaurant is the expected output. </li>
+                                        <li>    The Support Vector Regression is trained with the features and ratings. The kernel used for regression is RBF. </li>
+                                        <li>    The accuracy of the prediction is evaluated using R square score.</li>
 
 
                                 </p>
