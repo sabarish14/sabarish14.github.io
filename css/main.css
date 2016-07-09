@@ -2736,7 +2736,7 @@ body {
 	}
 /* Links */
 a {
- 	color: #F08DC4;
+ 	/*color: #F08DC4;*/
 	}
 a:hover {
  	color: #5CB4BD;
@@ -2744,10 +2744,10 @@ a:hover {
 
 /* Text Selection */
 ::selection {
- 	text-shadow: none; color: #333; background: #F08DC4;
+ 	text-shadow: none; color: #333;
 	}
 ::-moz-selection {
- 	text-shadow: none; color: #333; background: #F08DC4;
+ 	text-shadow: none; color: #333;
 	}
 
 /* Service Icons */
@@ -2776,7 +2776,7 @@ a.more-link:hover,
 .flex-control-paging li a.flex-active,
 .mejs-controls .mejs-time-rail .mejs-time-current,
 .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
- 	background: #F08DC4;
+ 	
 	}
 .entry-title a:hover,
 .portfolio-nav a.button:hover,
